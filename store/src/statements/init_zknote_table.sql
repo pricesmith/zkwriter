@@ -1,0 +1,10 @@
+BEGIN TRANSACTION;
+
+DROP TABLE [IF EXISTS] zknotes;
+CREATE TABLE [IF NOT EXISTS] zknotes (
+    id      INTEGER NOT NULL PRIMARY KEY UNIQUE,
+    title   TEXT    NOT NULL,
+    content TEXT    NOT NULL,
+);
+
+COMMIT;
